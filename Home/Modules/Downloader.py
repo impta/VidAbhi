@@ -4,7 +4,6 @@ import os
 from pyrogram import Client, filters
 from Home import vcusr
 from Home import yt_video_search, match_url
-import youtube_dl
 
 @Client.on_message(filters.command("audio", "!"))
 async def audio_dl(client, message):

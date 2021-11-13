@@ -1,4 +1,4 @@
-import os, asyncio, pafy, youtube_dl
+import os, asyncio, pafy
 from pyrogram import Client, filters
 from pytgcalls import GroupCallFactory
 from Home import video_info_extract, yt_video_search, match_url

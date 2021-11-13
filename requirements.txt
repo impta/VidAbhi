@@ -1,5 +1,4 @@
 tgcrypto
-youtube_dl
 pafy
 pytube
 youtube-search-python

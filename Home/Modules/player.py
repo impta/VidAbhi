@@ -59,8 +59,7 @@ async def live_vc(client, message):
     if match_url(INPUT_SOURCE, key="yt") is None:
         return await msg.edit("🔎 __Give me a valid URL__")
     #ytlink = await run_cmd(f"youtube-dl -g {INPUT_SOURCE}")
-    videof = pafy.new(INPUT_SOURCE)
-    ytlink = videof.getbest().url
+
     if match_url(ytlink) is None:
         return await msg.edit(f"`{ytlink}`")
     try:

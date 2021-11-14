@@ -24,16 +24,7 @@ async def audio_dl(client, message):
     }
     try:
         await msg.edit("📥 __Downloading...__")
-        with youtube_dl.YoutubeDL(aud_opts) as ytdl:
-            ytdl_data = ytdl.extract_info(FINAL_URL, download=True)
-            fname = ytdl.prepare_filename(ytdl_data)
-    except Exception as e:
-        return await msg.edit(f"`{e}`")
-    await msg.edit("📤 __Uploading...__")
-    await message.reply_audio(
-        fname,
-        caption=ytdl_data['title'],
-        title=ytdl_data['title'],
+        with 
         performer='Live_Streamer_TG')
     try:
         os.remove(fname)

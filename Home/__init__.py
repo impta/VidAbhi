@@ -2,7 +2,6 @@ import os, sys, random, asyncio
 import re, pafy
 from pyrogram import Client
 from youtubesearchpython import VideosSearch
-from pytube import YouTube
 
 def str_to_int(input):
     if type(input) == list:
